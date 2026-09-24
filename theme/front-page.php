@@ -31,13 +31,18 @@ $services = array(
 <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>INNOVATION ✦ TECHNOLOGY ✦ INDUSTRY ✦ </span><span>INNOVATION ✦ TECHNOLOGY ✦ INDUSTRY ✦ </span></div></div>
 <section id="services" class="section services grid-lines">
     <div class="section-heading reveal"><div><p class="eyebrow">Industrial services</p><h2>A selection of<br>industries we<br>serve</h2></div><div class="heading-description"><p>Connected industrial expertise, supplying technical services, equipment, and practical solutions for complex challenges.</p><a class="button yellow" href="#contact">Discuss your requirements ↗</a></div></div>
-    <div class="service-stack">
+    <div class="service-stack" data-service-carousel>
     <?php foreach ( $services as $i => $service ) : ?>
-        <article class="service-card" style="--card-index: <?php echo (int) $i; ?>">
+        <article class="service-card<?php echo 0 === $i ? ' is-active' : ''; ?>" data-service-card="<?php echo (int) $i; ?>">
             <div class="service-copy"><span class="service-number"><?php echo esc_html( sprintf( '%02d', $i + 1 ) ); ?></span><h3><?php echo esc_html( $service[0] ); ?></h3><ul class="plus-list"><li>Engineering &amp; design</li><li>Focused on your operation</li><li>A dependable project partner</li></ul><p><?php echo esc_html( $service[3] ); ?></p><a class="text-link" href="#contact">More details ↗</a></div>
             <img loading="lazy" src="<?php echo esc_url( $asset . $service[2] ); ?>" alt="<?php echo esc_attr( $service[0] ); ?>" width="768" height="458">
         </article>
     <?php endforeach; ?>
+    </div>
+    <div class="service-controls" aria-label="Service cards">
+        <button type="button" data-service-prev aria-label="Previous service">←</button>
+        <span data-service-count>01 / <?php echo esc_html( sprintf( '%02d', count( $services ) ) ); ?></span>
+        <button type="button" data-service-next aria-label="Next service">→</button>
     </div>
 </section>
 <section id="projects" class="section projects grid-lines">

@@ -39,6 +39,20 @@
     window.location.href = `mailto:${encodeURIComponent(form.dataset.recipient)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     form.querySelector('.form-note').textContent = 'Your email app was requested. Send the prepared draft there, or use the Email our team link.';
   });
+  const serviceCarousel = document.querySelector('[data-service-carousel]');
+  if (serviceCarousel) {
+    const serviceCards = Array.from(serviceCarousel.querySelectorAll('[data-service-card]'));
+    let serviceIndex = serviceCards.findIndex(card => card.classList.contains('is-active'));
+    if (serviceIndex < 0) serviceIndex = 0;
+    const serviceCount = document.querySelector('[data-service-count]');
+    const showService = nextIndex => {
+      serviceIndex = (nextIndex + serviceCards.length) % serviceCards.length;
+      serviceCards.forEach((card, index) => card.classList.toggle('is-active', index === serviceIndex));
+      if (serviceCount) serviceCount.textContent = `${String(serviceIndex + 1).padStart(2, '0')} / ${String(serviceCards.length).padStart(2, '0')}`;
+    };
+    document.querySelector('[data-service-prev]')?.addEventListener('click', () => showService(serviceIndex - 1));
+    document.querySelector('[data-service-next]')?.addEventListener('click', () => showService(serviceIndex + 1));
+  }
   const slides = Array.from(document.querySelectorAll('.quote-slide'));
   let active = 0;
   document.querySelectorAll('[data-quote]').forEach(button => button.addEventListener('click', () => {

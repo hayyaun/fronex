@@ -13,7 +13,9 @@ Text Domain: local-theme
     --paper:#f2f2f0;
     --muted:#747875;
     --line:#dedfdd;
-    --pad:clamp(22px,2.3vw,44px);
+    --content-max:1410px;
+    --gutter:30px;
+    --pad:max(var(--gutter), calc((100% - var(--content-max)) / 2));
 }
 * {
     box-sizing:border-box;
@@ -230,7 +232,10 @@ button {
     inset:0;
     z-index:1;
     pointer-events:none;
-    background:repeating-linear-gradient(90deg,transparent 0,transparent calc(25% - 1px),#ffffff13 25%);
+    margin:0 var(--pad);
+    border-left:1px solid #ffffff28;
+    border-right:1px solid #ffffff28;
+    background:linear-gradient(90deg, transparent calc(50% - .5px), #ffffff28 calc(50% - .5px), #ffffff28 calc(50% + .5px), transparent calc(50% + .5px));
 }
 .hero-copy {
     position:relative;
@@ -561,19 +566,62 @@ button {
 .service-stack {
     position:relative;
     isolation:isolate;
-    padding-bottom:40px;
+    min-height:420px;
 }
 .service-card {
-    position:sticky;
-    top:calc(30px + var(--card-index)*12px);
+    position:absolute;
+    inset:0;
     display:grid;
     grid-template-columns:46% 54%;
     background:#fff;
     color:var(--ink);
-    min-height:420px;
-    margin-bottom:50px;
-    box-shadow:0 10px 0 -2px #ffffff60,0 20px 0 -4px #ffffff30;
+    height:420px;
+    margin:0;
+    box-shadow:0 10px 0 -2px #ffffff60, 0 20px 0 -4px #ffffff30;
     overflow:hidden;
+    visibility:visible;
+    opacity:0;
+    pointer-events:none;
+    transform:none;
+    transition:opacity .3s ease;
+    z-index:1;
+}
+.service-card.is-active {
+    display:grid;
+    position:relative;
+    visibility:visible;
+    opacity:1;
+    pointer-events:auto;
+    transform:none;
+    z-index:5;
+    transition-delay:0s;
+}
+.service-controls {
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:16px;
+    margin-top:26px;
+    position:relative;
+    z-index:2;
+}
+.service-controls button {
+    width:44px;
+    height:44px;
+    border:1px solid #ffffff70;
+    background:transparent;
+    color:#fff;
+    font-size:20px;
+}
+.service-controls button:hover,
+.service-controls button:focus-visible {
+    background:var(--yellow);
+    color:var(--ink);
+}
+.service-controls span {
+    min-width:54px;
+    text-align:center;
+    font-size:12px;
 }
 .service-card:last-child {
     margin-bottom:0;
@@ -1338,6 +1386,11 @@ body:not(.home) article a {
         max-width:430px;
     }
 }
+@media(max-width:767px) {
+    :root {
+        --gutter:15px;
+    }
+}
 @media(max-width:600px) {
     h2 {
         font-size:34px;
@@ -1348,6 +1401,7 @@ body:not(.home) article a {
     }
     .hero {
         height:660px;
+        height:600px;
         min-height:0;
         padding-top:145px;
     }
@@ -1395,7 +1449,7 @@ body:not(.home) article a {
         bottom:0;
     }
     .feature-strip {
-        margin:0 16px;
+        margin:0 var(--pad);
         grid-template-columns:repeat(2,1fr);
     }
     .feature-strip article:nth-child(3),.feature-photo {
@@ -1484,12 +1538,9 @@ body:not(.home) article a {
         padding-bottom:15px;
     }
     .service-card {
-        position:relative;
-        top:auto;
         grid-template-columns:1fr;
         min-height:0;
-        margin-bottom:30px;
-        box-shadow:0 8px 0 -3px #ffffff30;
+        margin:0;
     }
     .service-copy {
         padding:25px;
@@ -1505,8 +1556,11 @@ body:not(.home) article a {
     }
     .service-card>img {
         min-height:0;
-        height:240px;
+        height:300px;
         grid-row:2;
+    }
+    .service-stack {
+        min-height:0;
     }
     .project-illustration {
         width:42%;
@@ -1629,7 +1683,7 @@ body:not(.home) article a {
         margin-bottom:0;
     }
     .site-footer {
-        padding:45px 16px 25px;
+        padding:45px var(--pad) 25px;
     }
     .footer-top {
         grid-template-columns:1fr;
@@ -1660,10 +1714,6 @@ body:not(.home) article a {
     .will-reveal {
         opacity:1;
         transform:none;
-    }
-    .service-card {
-        position:relative;
-        top:auto;
     }
 }
 .reading-card summary { list-style: none; cursor: pointer; }
