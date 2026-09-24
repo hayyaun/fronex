@@ -13,7 +13,6 @@ $services = array(
 ?>
 <main id="content">
 <section class="hero" aria-labelledby="hero-title">
-    <img class="hero-background" src="<?php echo esc_url( $asset . 'hero-industry.jpg' ); ?>" alt="Engineers overlooking an industrial facility" fetchpriority="high">
     <div class="hero-copy"><h1 id="hero-title">Smart industry<br>solutions</h1><p>Innovative thinking for a sustainable<br>tomorrow. Built with precision.</p><a class="button" href="#services">Our expertise <span aria-hidden="true">↗</span></a></div>
     <div class="hero-stat"><strong>360°</strong><span>Your ambition.<br>Our complete focus.</span><i aria-hidden="true"></i></div>
     <div class="hero-wordmark" aria-hidden="true">FRONEX</div>

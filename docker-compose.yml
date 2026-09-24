@@ -3,7 +3,7 @@ name: fronex
 
 services:
   wordpress:
-    container_name: fronext-wp
+    container_name: fronex-wp
     image: wordpress:7.1.2-php8.3-apache
     ports:
       - "127.0.0.1:${WP_PORT:-8080}:80"
