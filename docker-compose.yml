@@ -1,5 +1,5 @@
-# Keep the existing volume/network namespace independent of the checkout folder.
-name: wp-project
+# Keep the volume/network namespace independent of the checkout folder.
+name: fronex
 
 services:
   wordpress:
@@ -45,4 +45,6 @@ services:
 
 volumes:
   wordpress_data:
+    name: fronex_wordpress_data
   db_data:
+    name: fronex_db_data
