@@ -1,0 +1,17 @@
+/*
+Theme Name: Local Theme
+Description: A minimal classic theme for local development.
+Version: 1.0.0
+Requires at least: 6.6
+Requires PHP: 8.3
+Text Domain: local-theme
+*/
+
+* { box-sizing: border-box; }
+body { margin: 0 auto; padding: 2rem 1rem; max-width: 50rem; font-family: system-ui, sans-serif; line-height: 1.6; color: #222; }
+a { color: #1756a9; }
+img { max-width: 100%; height: auto; }
+header, main, footer { margin-bottom: 2rem; }
+article { margin-bottom: 3rem; }
+.screen-reader-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.screen-reader-text:focus { position: static; width: auto; height: auto; clip-path: none; }
