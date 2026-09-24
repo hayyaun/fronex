@@ -32,10 +32,11 @@ services:
       - db_data:/var/lib/mysql
     healthcheck:
       test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
-      start_period: 30s
+      # First-time initialization can take several minutes on Docker Desktop/WSL.
+      start_period: 5m
       interval: 10s
       timeout: 5s
-      retries: 10
+      retries: 30
 
 volumes:
   wordpress_data:

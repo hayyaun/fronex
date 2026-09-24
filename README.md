@@ -12,6 +12,8 @@ docker compose up -d --wait
 
 Open http://localhost:8080, complete the WordPress installer, then activate **Local Theme** under **Appearance → Themes**. Edit files in `theme/`; changes appear immediately. The theme is mounted read-only inside the container, but remains editable on the host. Change `WP_PORT` in `.env` if port 8080 is occupied.
 
+The first startup may take several minutes while MariaDB initializes its data files, especially on Docker Desktop/WSL. The database health check allows up to roughly ten minutes for this. Follow progress with `docker compose logs -f db`; avoid interrupting initial database creation.
+
 ## Layout
 
 - `theme/`: the custom classic PHP theme; no build step.
