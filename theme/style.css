@@ -1022,12 +1022,13 @@ button {
     font-weight:600;
     text-align:center;
     white-space:nowrap;
-    margin-bottom:-25px;
+    margin-bottom:-.30em;
 }
 .footer-panel {
     position:relative;
-    background:linear-gradient(110deg,#151e23dc,#463632dc);
-    backdrop-filter:blur(20px);
+    background:linear-gradient(180deg,#1d252d80 0,#1d252ddd 90px),linear-gradient(110deg,#151e2320,#46363250);
+    -webkit-backdrop-filter:blur(14px);
+    backdrop-filter:blur(14px);
     border:1px solid #ffffff15;
 }
 .footer-top {
@@ -1685,7 +1686,6 @@ body:not(.home) article a {
     .footer-wordmark {
         font-size:22vw;
         letter-spacing:-.07em;
-        margin-bottom:0;
     }
     .site-footer {
         padding:45px var(--pad) 25px;
