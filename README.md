@@ -1,5 +1,17 @@
 # Local WordPress
 
+## FTP upload
+
+Install `lftp` with `sudo apt install lftp`. Put `FTP_HOST`, `FTP_USERNAME`,
+`FTP_PASSWORD`, and `FTP_REMOTE_DIR` in the ignored `.env` file (shell syntax;
+quote values containing special characters).
+
+Run `make deploy-check` to validate configuration without connecting, then
+`make deploy` to upload `theme/` into `/htdocs/wp-content/themes/theme/`.
+The upload uses `lftp mirror --reverse` with three parallel transfers and bounded
+retries. Matching remote files may be overwritten; remote files are not deleted.
+Credentials are supplied over stdin rather than command-line arguments.
+
 Minimal classic theme development using Docker Compose v2+ (Docker Desktop or Docker Engine with Compose). No local PHP, Composer, Node, or WordPress installation is required.
 
 ## Start
