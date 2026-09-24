@@ -1,5 +1,9 @@
+# Keep the existing volume/network namespace independent of the checkout folder.
+name: wp-project
+
 services:
   wordpress:
+    container_name: fronext-wp
     image: wordpress:7.1.2-php8.3-apache
     ports:
       - "127.0.0.1:${WP_PORT:-8080}:80"
@@ -22,6 +26,7 @@ services:
         condition: service_healthy
 
   db:
+    container_name: fronex-db
     image: mariadb:11.4
     environment:
       MARIADB_DATABASE: wordpress

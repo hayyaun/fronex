@@ -45,3 +45,16 @@ Database credentials are applied when the database volume is first initialized; 
 WordPress is pinned to a release and PHP variant; MariaDB follows the 11.4 maintenance series. Use `docker compose pull` and `docker compose up -d --wait` for image updates. Existing WordPress core in the persistent volume is not replaced by an image update: update it through the dashboard, or reset disposable local data after changing the image tag. Back up valuable data before resets or upgrades.
 
 References: [official WordPress image](https://hub.docker.com/_/wordpress) and [MariaDB container health checks](https://mariadb.com/docs/server/server-management/automated-mariadb-deployment-and-administration/docker-and-mariadb/using-healthcheck-sh).
+
+
+## Fronex homepage
+
+The active Local Theme now uses `theme/front-page.php` for its industrial landing page. It includes a hero, about section, expandable services, project concepts, team profiles, manually controlled testimonials, email contact, latest WordPress posts, and footer. The reference workflow section is intentionally omitted.
+
+- Edit section text and image selections in `theme/front-page.php`, navigation in `theme/header.php`, and footer in `theme/footer.php`.
+- Styles are in `theme/style.css`; scroll reveals, mobile navigation, service accordion behavior, and testimonial controls are in `theme/assets/site.js`. No external animation libraries are required. Reduced-motion preferences are respected.
+- Selected reference images are copied into `theme/assets/images`. The original saved page stays in the ignored `inspiration/` directory. These are preview images; replace them with your own licensed imagery before publication.
+- Team roles, project concepts, and testimonials are illustrative content, not claims about actual people, clients, or completed work. Replace these when final business content is available.
+- Contact links use the WordPress administration email configured under Settings → General. The news section displays up to three published posts and is omitted when there are none.
+
+Compose uses the fixed project name `wp-project` and container names `fronex-db` and `fronext-wp`, regardless of the checkout folder name. The legacy project name deliberately preserves the existing `wp-project_db_data` and `wp-project_wordpress_data` volumes. When replacing old containers, keep those volumes (do not use `down -v`), then run `docker compose up -d --wait` from this directory. Explicit `-p` or `COMPOSE_PROJECT_NAME` overrides take precedence over the configured project name.

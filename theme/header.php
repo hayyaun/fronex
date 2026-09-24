@@ -9,8 +9,11 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <a class="screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'local-theme' ); ?></a>
-<header>
-    <p class="dev-banner"><?php esc_html_e( 'Local theme is live — hello from Docker!', 'local-theme' ); ?></p>
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
-    <p><?php echo esc_html( get_bloginfo( 'description' ) ); ?></p>
+<header class="site-header">
+    <a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Fronex home"><span class="brand-symbol" aria-hidden="true">✳</span> fronex<span class="brand-period">.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu <span aria-hidden="true">☰</span></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <?php foreach ( array( 'about' => 'About us', 'services' => 'Expertise', 'projects' => 'Projects', 'team' => 'Our people' ) as $id => $label ) : ?><a href="<?php echo esc_url( home_url( '/#' . $id ) ); ?>"><?php echo esc_html( $label ); ?></a><?php endforeach; ?>
+        <a class="nav-contact" href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Let’s talk <span aria-hidden="true">↗</span></a>
+    </nav>
 </header>

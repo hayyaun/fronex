@@ -11,5 +11,6 @@ add_action( 'after_setup_theme', function () {
 } );
 
 add_action( 'wp_enqueue_scripts', function () {
+    wp_enqueue_script( 'fronex-motion', get_template_directory_uri() . '/assets/site.js', array(), (string) filemtime( get_template_directory() . '/assets/site.js' ), true );
     wp_enqueue_style( 'local-theme', get_stylesheet_uri(), array(), (string) filemtime( get_stylesheet_directory() . '/style.css' ) );
 } );
