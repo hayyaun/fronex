@@ -1,0 +1,11 @@
+.fronex-editor { max-width: 1000px; }
+.fronex-editor-actions { position: sticky; top: 32px; z-index: 2; padding: 16px 0; background: #f0f0f1; display: flex; gap: 12px; }
+.fronex-editor-section { margin: 12px 0; background: #fff; border: 1px solid #c3c4c7; }
+.fronex-editor-section summary { cursor: pointer; padding: 18px; font-size: 18px; font-weight: 600; }
+.fronex-editor-field { padding: 16px 20px; border-top: 1px solid #eee; }
+.fronex-editor-field label { display: block; font-weight: 600; margin-bottom: 8px; }
+.fronex-editor-field input, .fronex-editor-field textarea { width: 100%; max-width: 750px; display: block; }
+.fronex-field-actions { display: flex; align-items: center; gap: 14px; margin-top: 8px; }
+.fronex-image-preview { display: block; margin-top: 10px; max-width: 220px; max-height: 130px; object-fit: contain; background: #eee; }
+.fronex-image-preview[hidden] { display: none; }
+@media (max-width: 782px) { .fronex-editor-actions { top: 46px; } }

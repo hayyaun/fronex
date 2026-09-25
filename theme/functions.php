@@ -1,6 +1,7 @@
 <?php
 /** Theme setup and assets. */
 defined( 'ABSPATH' ) || exit;
+require_once get_template_directory() . '/inc/homepage-content.php';
 
 add_action( 'after_setup_theme', function () {
     load_theme_textdomain( 'local-theme', get_template_directory() . '/languages' );

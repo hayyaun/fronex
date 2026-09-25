@@ -1,0 +1,1058 @@
+{
+  "services_card_1_title": {
+    "group": "Services",
+    "label": "Card 1 — Title",
+    "default": "Automation & robotics",
+    "type": "text"
+  },
+  "services_card_1_image": {
+    "group": "Services",
+    "label": "Card 1 — Image",
+    "default": "projects-6-768x436.jpg",
+    "type": "image"
+  },
+  "services_card_1_description": {
+    "group": "Services",
+    "label": "Card 1 — Description",
+    "default": "Integrate connected equipment and intelligent controls to make everyday production more precise, predictable, and efficient.",
+    "type": "text"
+  },
+  "services_card_2_title": {
+    "group": "Services",
+    "label": "Card 2 — Title",
+    "default": "Precision engineering",
+    "type": "text"
+  },
+  "services_card_2_image": {
+    "group": "Services",
+    "label": "Card 2 — Image",
+    "default": "services-3-768x458.jpg",
+    "type": "image"
+  },
+  "services_card_2_description": {
+    "group": "Services",
+    "label": "Card 2 — Description",
+    "default": "From initial concepts to final components, bring demanding engineering challenges into focus with thoughtful design and precision.",
+    "type": "text"
+  },
+  "services_card_3_title": {
+    "group": "Services",
+    "label": "Card 3 — Title",
+    "default": "Energy & infrastructure",
+    "type": "text"
+  },
+  "services_card_3_image": {
+    "group": "Services",
+    "label": "Card 3 — Image",
+    "default": "services-4-768x458.jpg",
+    "type": "image"
+  },
+  "services_card_3_description": {
+    "group": "Services",
+    "label": "Card 3 — Description",
+    "default": "Design resilient infrastructure and energy systems that support your operation today and adapt to the needs of tomorrow.",
+    "type": "text"
+  },
+  "services_card_4_title": {
+    "group": "Services",
+    "label": "Card 4 — Title",
+    "default": "Advanced manufacturing",
+    "type": "text"
+  },
+  "services_card_4_image": {
+    "group": "Services",
+    "label": "Card 4 — Image",
+    "default": "services-5-768x458.jpg",
+    "type": "image"
+  },
+  "services_card_4_description": {
+    "group": "Services",
+    "label": "Card 4 — Description",
+    "default": "Connect people, processes, and equipment to build manufacturing operations that are ready for their next chapter.",
+    "type": "text"
+  },
+  "services_card_5_title": {
+    "group": "Services",
+    "label": "Card 5 — Title",
+    "default": "Materials & maintenance",
+    "type": "text"
+  },
+  "services_card_5_image": {
+    "group": "Services",
+    "label": "Card 5 — Image",
+    "default": "services-6-768x458.jpg",
+    "type": "image"
+  },
+  "services_card_5_description": {
+    "group": "Services",
+    "label": "Card 5 — Description",
+    "default": "Keep essential assets working at their best through considered material choices, preventive care, and continuous improvement.",
+    "type": "text"
+  },
+  "projects_card_1_image": {
+    "group": "Projects",
+    "label": "Card 1 — Image",
+    "default": "projects-12-768x436.jpg",
+    "type": "image"
+  },
+  "projects_card_1_category": {
+    "group": "Projects",
+    "label": "Card 1 — Category",
+    "default": "Manufacturing",
+    "type": "text"
+  },
+  "projects_card_1_title": {
+    "group": "Projects",
+    "label": "Card 1 — Title",
+    "default": "Energy efficient factory infrastructure",
+    "type": "text"
+  },
+  "projects_card_2_image": {
+    "group": "Projects",
+    "label": "Card 2 — Image",
+    "default": "projects-11-768x436.jpg",
+    "type": "image"
+  },
+  "projects_card_2_category": {
+    "group": "Projects",
+    "label": "Card 2 — Category",
+    "default": "Engineering",
+    "type": "text"
+  },
+  "projects_card_2_title": {
+    "group": "Projects",
+    "label": "Card 2 — Title",
+    "default": "Precision engineering & industrial innovation",
+    "type": "text"
+  },
+  "team_card_1_image": {
+    "group": "Team",
+    "label": "Card 1 — Image",
+    "default": "team-1.jpg",
+    "type": "image"
+  },
+  "team_card_1_name": {
+    "group": "Team",
+    "label": "Card 1 — Name",
+    "default": "Engineering team",
+    "type": "text"
+  },
+  "team_card_1_role": {
+    "group": "Team",
+    "label": "Card 1 — Role",
+    "default": "Precision & design",
+    "type": "text"
+  },
+  "team_card_2_image": {
+    "group": "Team",
+    "label": "Card 2 — Image",
+    "default": "team-3.jpg",
+    "type": "image"
+  },
+  "team_card_2_name": {
+    "group": "Team",
+    "label": "Card 2 — Name",
+    "default": "Production team",
+    "type": "text"
+  },
+  "team_card_2_role": {
+    "group": "Team",
+    "label": "Card 2 — Role",
+    "default": "Operations & quality",
+    "type": "text"
+  },
+  "team_card_3_image": {
+    "group": "Team",
+    "label": "Card 3 — Image",
+    "default": "team-5.jpg",
+    "type": "image"
+  },
+  "team_card_3_name": {
+    "group": "Team",
+    "label": "Card 3 — Name",
+    "default": "People & partnerships",
+    "type": "text"
+  },
+  "team_card_3_role": {
+    "group": "Team",
+    "label": "Card 3 — Role",
+    "default": "Collaboration & progress",
+    "type": "text"
+  },
+  "news_placeholders_card_1_image": {
+    "group": "News placeholders",
+    "label": "Card 1 — Image",
+    "default": "blog-12.jpg",
+    "type": "image"
+  },
+  "news_placeholders_card_1_title": {
+    "group": "News placeholders",
+    "label": "Card 1 — Title",
+    "default": "Smarter automation on the factory floor",
+    "type": "text"
+  },
+  "news_placeholders_card_1_description": {
+    "group": "News placeholders",
+    "label": "Card 1 — Description",
+    "default": "A connected factory starts with visibility. Map the production process, identify repetitive work, and measure where automation could improve consistency before choosing equipment.",
+    "type": "text"
+  },
+  "news_placeholders_card_2_image": {
+    "group": "News placeholders",
+    "label": "Card 2 — Image",
+    "default": "blog-13.jpg",
+    "type": "image"
+  },
+  "news_placeholders_card_2_title": {
+    "group": "News placeholders",
+    "label": "Card 2 — Title",
+    "default": "Building resilient industrial systems",
+    "type": "text"
+  },
+  "news_placeholders_card_2_description": {
+    "group": "News placeholders",
+    "label": "Card 2 — Description",
+    "default": "Reliability begins with understanding dependencies. Review critical equipment, maintenance schedules, and supply routes together to identify the areas that need a stronger backup plan.",
+    "type": "text"
+  },
+  "news_placeholders_card_3_image": {
+    "group": "News placeholders",
+    "label": "Card 3 — Image",
+    "default": "blog-14.jpg",
+    "type": "image"
+  },
+  "news_placeholders_card_3_title": {
+    "group": "News placeholders",
+    "label": "Card 3 — Title",
+    "default": "A more efficient approach to energy",
+    "type": "text"
+  },
+  "news_placeholders_card_3_description": {
+    "group": "News placeholders",
+    "label": "Card 3 — Description",
+    "default": "Begin with a baseline of how and when energy is used. Small operational changes, preventive maintenance, and better monitoring can reveal practical opportunities for improvement.",
+    "type": "text"
+  },
+  "hero_heading_smart_industry_solutions": {
+    "group": "Hero",
+    "label": "Heading — Smart industry\nsolutions",
+    "default": "Smart industry\nsolutions",
+    "type": "text"
+  },
+  "hero_description_innovative_thinking_for_a_sustainable_tomorrow_built_w": {
+    "group": "Hero",
+    "label": "Description — Innovative thinking for a sustainable\ntomorrow. Built w",
+    "default": "Innovative thinking for a sustainable\ntomorrow. Built with precision.",
+    "type": "text"
+  },
+  "hero_link_destination_services": {
+    "group": "Hero",
+    "label": "Link destination — #services",
+    "default": "#services",
+    "type": "url"
+  },
+  "hero_link_label_our_expertise": {
+    "group": "Hero",
+    "label": "Link label — Our expertise",
+    "default": "Our expertise",
+    "type": "text"
+  },
+  "hero_text_your_ambition_our_complete_focus": {
+    "group": "Hero",
+    "label": "Text — Your ambition.\nOur complete focus.",
+    "default": "Your ambition.\nOur complete focus.",
+    "type": "text"
+  },
+  "hero_text_fronex": {
+    "group": "Hero",
+    "label": "Text — FRONEX",
+    "default": "FRONEX",
+    "type": "text"
+  },
+  "principles_heading_professional_ethics": {
+    "group": "Principles",
+    "label": "Heading — Professional\nethics",
+    "default": "Professional\nethics",
+    "type": "text"
+  },
+  "principles_description_integrity_is_at_the_heart_of_our_work_open_communicati": {
+    "group": "Principles",
+    "label": "Description — Integrity is at the heart of our work. Open communicati",
+    "default": "Integrity is at the heart of our work. Open communication and a commitment to quality guide every decision.",
+    "type": "text"
+  },
+  "principles_heading_high_technology_factory": {
+    "group": "Principles",
+    "label": "Heading — High technology\nfactory",
+    "default": "High technology\nfactory",
+    "type": "text"
+  },
+  "principles_description_smarter_equipment_and_connected_systems_bring_practical": {
+    "group": "Principles",
+    "label": "Description — Smarter equipment and connected systems bring practical",
+    "default": "Smarter equipment and connected systems bring practical innovation to the factory floor.",
+    "type": "text"
+  },
+  "principles_heading_high_standard_engineering": {
+    "group": "Principles",
+    "label": "Heading — High standard\nengineering",
+    "default": "High standard\nengineering",
+    "type": "text"
+  },
+  "principles_description_a_careful_approach_to_precision_performance_and_relia": {
+    "group": "Principles",
+    "label": "Description — A careful approach to precision, performance, and relia",
+    "default": "A careful approach to precision, performance, and reliability. Built around your needs.",
+    "type": "text"
+  },
+  "principles_link_destination_contact": {
+    "group": "Principles",
+    "label": "Link destination — #contact",
+    "default": "#contact",
+    "type": "url"
+  },
+  "principles_image_description_industrial_engineer_on_site": {
+    "group": "Principles",
+    "label": "Image description — Industrial engineer on site",
+    "default": "Industrial engineer on site",
+    "type": "text"
+  },
+  "principles_image_industry_team_jpg": {
+    "group": "Principles",
+    "label": "Feature image",
+    "default": "industry-team.jpg",
+    "type": "image"
+  },
+  "principles_heading_be_part_of_our_industrial_success": {
+    "group": "Principles",
+    "label": "Heading — Be part of our\nindustrial\nsuccess.",
+    "default": "Be part of our\nindustrial\nsuccess.",
+    "type": "text"
+  },
+  "about_text_about": {
+    "group": "About",
+    "label": "Text — ABOUT",
+    "default": "ABOUT",
+    "type": "text"
+  },
+  "about_image_h1_bg01_png": {
+    "group": "About",
+    "label": "Decorative illustration",
+    "default": "h1-bg01.png",
+    "type": "image"
+  },
+  "about_image_description_industrial_facility_at_sunset": {
+    "group": "About",
+    "label": "Image description — Industrial facility at sunset",
+    "default": "Industrial facility at sunset",
+    "type": "text"
+  },
+  "about_image_h1_banner3_jpg": {
+    "group": "About",
+    "label": "Facility photo",
+    "default": "h1-banner3.jpg",
+    "type": "image"
+  },
+  "about_emphasis_built": {
+    "group": "About",
+    "label": "Emphasis — Built",
+    "default": "Built",
+    "type": "text"
+  },
+  "about_emphasis_for_what_comes_next": {
+    "group": "About",
+    "label": "Emphasis — FOR WHAT\nCOMES NEXT",
+    "default": "FOR WHAT\nCOMES NEXT",
+    "type": "text"
+  },
+  "about_description_what_we_do": {
+    "group": "About",
+    "label": "Description — What we do",
+    "default": "What we do",
+    "type": "text"
+  },
+  "about_heading_trusted_expertise_forward_thinking_industry": {
+    "group": "About",
+    "label": "Heading — Trusted expertise.\nForward-thinking industry.",
+    "default": "Trusted expertise.\nForward-thinking industry.",
+    "type": "text"
+  },
+  "about_description_welcome_to_fronex_we_bring_practical_expertise_and_fre": {
+    "group": "About",
+    "label": "Description — Welcome to Fronex. We bring practical expertise and fre",
+    "default": "Welcome to Fronex. We bring practical expertise and fresh thinking to industrial challenges.",
+    "type": "text"
+  },
+  "about_description_from_smarter_production_to_more_resilient_infrastructur": {
+    "group": "About",
+    "label": "Description — From smarter production to more resilient infrastructur",
+    "default": "From smarter production to more resilient infrastructure, we connect people, technology, and ideas to create meaningful progress.",
+    "type": "text"
+  },
+  "about_list_item_a_collaborative_approach_to_every_challenge": {
+    "group": "About",
+    "label": "List item — A collaborative approach to every challenge",
+    "default": "A collaborative approach to every challenge",
+    "type": "text"
+  },
+  "about_list_item_precision_engineering_and_considered_design": {
+    "group": "About",
+    "label": "List item — Precision engineering and considered design",
+    "default": "Precision engineering and considered design",
+    "type": "text"
+  },
+  "about_list_item_solutions_built_around_your_operation": {
+    "group": "About",
+    "label": "List item — Solutions built around your operation",
+    "default": "Solutions built around your operation",
+    "type": "text"
+  },
+  "about_link_destination_contact": {
+    "group": "About",
+    "label": "Link destination — #contact",
+    "default": "#contact",
+    "type": "url"
+  },
+  "about_link_label_more_about_us": {
+    "group": "About",
+    "label": "Link label — More about us",
+    "default": "More about us",
+    "type": "text"
+  },
+  "ticker_text_innovation_technology_industry": {
+    "group": "Ticker",
+    "label": "Scrolling text (repeated automatically)",
+    "default": "INNOVATION ✦ TECHNOLOGY ✦ INDUSTRY ✦",
+    "type": "text"
+  },
+  "services_description_industrial_services": {
+    "group": "Services",
+    "label": "Description — Industrial services",
+    "default": "Industrial services",
+    "type": "text"
+  },
+  "services_heading_a_selection_of_industries_we_serve": {
+    "group": "Services",
+    "label": "Heading — A selection of\nindustries we\nserve",
+    "default": "A selection of\nindustries we\nserve",
+    "type": "text"
+  },
+  "services_description_connected_industrial_expertise_supplying_technical_ser": {
+    "group": "Services",
+    "label": "Description — Connected industrial expertise, supplying technical ser",
+    "default": "Connected industrial expertise, supplying technical services, equipment, and practical solutions for complex challenges.",
+    "type": "text"
+  },
+  "services_link_destination_contact": {
+    "group": "Services",
+    "label": "Link destination — #contact",
+    "default": "#contact",
+    "type": "url"
+  },
+  "services_link_label_discuss_your_requirements": {
+    "group": "Services",
+    "label": "Link label — Discuss your requirements ↗",
+    "default": "Discuss your requirements ↗",
+    "type": "text"
+  },
+  "projects_image_h1_banner4_png": {
+    "group": "Projects",
+    "label": "Decorative illustration",
+    "default": "h1-banner4.png",
+    "type": "image"
+  },
+  "projects_description_project_possibilities": {
+    "group": "Projects",
+    "label": "Description — Project possibilities",
+    "default": "Project possibilities",
+    "type": "text"
+  },
+  "projects_heading_delivering_our_clients_more_project_clarity": {
+    "group": "Projects",
+    "label": "Heading — Delivering our\nclients more\nproject clarity",
+    "default": "Delivering our\nclients more\nproject clarity",
+    "type": "text"
+  },
+  "team_description_meet_our_team": {
+    "group": "Team",
+    "label": "Description — Meet our team",
+    "default": "Meet our team",
+    "type": "text"
+  },
+  "team_heading_meet_the_industry_pioneers": {
+    "group": "Team",
+    "label": "Heading — Meet the industry\npioneers",
+    "default": "Meet the industry\npioneers",
+    "type": "text"
+  },
+  "offer_description_what_we_offer": {
+    "group": "Offer",
+    "label": "Description — What we offer",
+    "default": "What we offer",
+    "type": "text"
+  },
+  "offer_heading_get_premium_industrial_services": {
+    "group": "Offer",
+    "label": "Heading — Get premium\nindustrial services",
+    "default": "Get premium\nindustrial services",
+    "type": "text"
+  },
+  "offer_heading_full_service": {
+    "group": "Offer",
+    "label": "Heading — Full service",
+    "default": "Full service",
+    "type": "text"
+  },
+  "offer_description_connected_expertise_from_the_first_conversation_through": {
+    "group": "Offer",
+    "label": "Description — Connected expertise from the first conversation through",
+    "default": "Connected expertise from the first conversation through project delivery.",
+    "type": "text"
+  },
+  "offer_heading_maintenance": {
+    "group": "Offer",
+    "label": "Heading — Maintenance",
+    "default": "Maintenance",
+    "type": "text"
+  },
+  "offer_description_practical_support_to_keep_your_equipment_and_operation": {
+    "group": "Offer",
+    "label": "Description — Practical support to keep your equipment and operation ",
+    "default": "Practical support to keep your equipment and operation performing.",
+    "type": "text"
+  },
+  "offer_link_destination_contact": {
+    "group": "Offer",
+    "label": "Link destination — #contact",
+    "default": "#contact",
+    "type": "url"
+  },
+  "offer_link_label_contact_us": {
+    "group": "Offer",
+    "label": "Link label — Contact us ↗",
+    "default": "Contact us ↗",
+    "type": "text"
+  },
+  "offer_text_industry": {
+    "group": "Offer",
+    "label": "Text — INDUSTRY",
+    "default": "INDUSTRY",
+    "type": "text"
+  },
+  "testimonials_image_description_engineer_wearing_safety_equipment": {
+    "group": "Testimonials",
+    "label": "Image description — Engineer wearing safety equipment",
+    "default": "Engineer wearing safety equipment",
+    "type": "text"
+  },
+  "testimonials_image_h1_banner5_jpg": {
+    "group": "Testimonials",
+    "label": "Main photo",
+    "default": "h1-banner5.jpg",
+    "type": "image"
+  },
+  "testimonials_description_testimonials": {
+    "group": "Testimonials",
+    "label": "Description — Testimonials",
+    "default": "Testimonials",
+    "type": "text"
+  },
+  "testimonials_heading_hear_from_our_satisfied_customers": {
+    "group": "Testimonials",
+    "label": "Heading — Hear from our\nsatisfied\ncustomers",
+    "default": "Hear from our\nsatisfied\ncustomers",
+    "type": "text"
+  },
+  "testimonials_quote_the_best_results_come_from_a_team_that_listens_careful": {
+    "group": "Testimonials",
+    "label": "Quote — “The best results come from a team that listens careful",
+    "default": "“The best results come from a team that listens carefully, thinks practically, and cares about the details as much as you do.”",
+    "type": "text"
+  },
+  "testimonials_image_avatar_2_jpg": {
+    "group": "Testimonials",
+    "label": "First testimonial — Portrait",
+    "default": "avatar-2.jpg",
+    "type": "image"
+  },
+  "testimonials_emphasis_a_shared_ambition": {
+    "group": "Testimonials",
+    "label": "Emphasis — A shared ambition",
+    "default": "A shared ambition",
+    "type": "text"
+  },
+  "testimonials_text_illustrative_testimonial_manufacturing": {
+    "group": "Testimonials",
+    "label": "Text — Illustrative testimonial · Manufacturing",
+    "default": "Illustrative testimonial · Manufacturing",
+    "type": "text"
+  },
+  "testimonials_quote_a_fresh_perspective_can_change_more_than_a_single_proj": {
+    "group": "Testimonials",
+    "label": "Quote — “A fresh perspective can change more than a single proj",
+    "default": "“A fresh perspective can change more than a single project. It can change the way you see the future of your entire operation.”",
+    "type": "text"
+  },
+  "testimonials_emphasis_a_forward_looking_partnership": {
+    "group": "Testimonials",
+    "label": "Emphasis — A forward-looking partnership",
+    "default": "A forward-looking partnership",
+    "type": "text"
+  },
+  "testimonials_text_illustrative_testimonial_engineering": {
+    "group": "Testimonials",
+    "label": "Text — Illustrative testimonial · Engineering",
+    "default": "Illustrative testimonial · Engineering",
+    "type": "text"
+  },
+  "testimonials_quote_clear_communication_and_thoughtful_engineering_bring_c": {
+    "group": "Testimonials",
+    "label": "Quote — “Clear communication and thoughtful engineering bring c",
+    "default": "“Clear communication and thoughtful engineering bring confidence to even the most complex industrial challenges.”",
+    "type": "text"
+  },
+  "testimonials_emphasis_confidence_at_every_step": {
+    "group": "Testimonials",
+    "label": "Emphasis — Confidence at every step",
+    "default": "Confidence at every step",
+    "type": "text"
+  },
+  "testimonials_text_illustrative_testimonial_infrastructure": {
+    "group": "Testimonials",
+    "label": "Text — Illustrative testimonial · Infrastructure",
+    "default": "Illustrative testimonial · Infrastructure",
+    "type": "text"
+  },
+  "contact_description_get_in_touch": {
+    "group": "Contact",
+    "label": "Description — Get in touch",
+    "default": "Get in touch",
+    "type": "text"
+  },
+  "contact_heading_ready_to_build_start_talk": {
+    "group": "Contact",
+    "label": "Heading — Ready to\nbuild? Start\ntalk.",
+    "default": "Ready to\nbuild? Start\ntalk.",
+    "type": "text"
+  },
+  "contact_heading_our_approach": {
+    "group": "Contact",
+    "label": "Heading — Our approach",
+    "default": "Our approach",
+    "type": "text"
+  },
+  "contact_description_your_challenge_our_expertise_one_shared_ambition": {
+    "group": "Contact",
+    "label": "Description — Your challenge.\nOur expertise.\nOne shared ambition.",
+    "default": "Your challenge.\nOur expertise.\nOne shared ambition.",
+    "type": "text"
+  },
+  "contact_heading_support": {
+    "group": "Contact",
+    "label": "Heading — Support",
+    "default": "Support",
+    "type": "text"
+  },
+  "contact_link_label_email_our_team": {
+    "group": "Contact",
+    "label": "Link label — Email our team ↗",
+    "default": "Email our team ↗",
+    "type": "text"
+  },
+  "contact_description_let_s_discuss_your_next_project": {
+    "group": "Contact",
+    "label": "Description — Let’s discuss your next project.",
+    "default": "Let’s discuss your next project.",
+    "type": "text"
+  },
+  "contact_form_label_full_name": {
+    "group": "Contact",
+    "label": "Form label — Full name",
+    "default": "Full name",
+    "type": "text"
+  },
+  "contact_input_placeholder_your_name": {
+    "group": "Contact",
+    "label": "Input placeholder — Your name",
+    "default": "Your name",
+    "type": "text"
+  },
+  "contact_form_label_phone": {
+    "group": "Contact",
+    "label": "Form label — Phone",
+    "default": "Phone",
+    "type": "text"
+  },
+  "contact_input_placeholder_your_phone_number": {
+    "group": "Contact",
+    "label": "Input placeholder — Your phone number",
+    "default": "Your phone number",
+    "type": "text"
+  },
+  "contact_form_label_email_address": {
+    "group": "Contact",
+    "label": "Form label — Email address *",
+    "default": "Email address *",
+    "type": "text"
+  },
+  "contact_input_placeholder_you_company_com": {
+    "group": "Contact",
+    "label": "Input placeholder — you@company.com",
+    "default": "you@company.com",
+    "type": "text"
+  },
+  "contact_form_label_services": {
+    "group": "Contact",
+    "label": "Form label — Services *",
+    "default": "Services *",
+    "type": "text"
+  },
+  "contact_select_prompt_select_a_service": {
+    "group": "Contact",
+    "label": "Select prompt — Select a service",
+    "default": "Select a service",
+    "type": "text"
+  },
+  "contact_form_label_write_message": {
+    "group": "Contact",
+    "label": "Form label — Write message *",
+    "default": "Write message *",
+    "type": "text"
+  },
+  "contact_input_placeholder_tell_us_about_your_project": {
+    "group": "Contact",
+    "label": "Input placeholder — Tell us about your project…",
+    "default": "Tell us about your project…",
+    "type": "text"
+  },
+  "contact_button_label_prepare_email": {
+    "group": "Contact",
+    "label": "Button label — Prepare email ↗",
+    "default": "Prepare email ↗",
+    "type": "text"
+  },
+  "contact_description_opens_a_draft_in_your_email_app_for_you_to_send": {
+    "group": "Contact",
+    "label": "Description — Opens a draft in your email app for you to send.",
+    "default": "Opens a draft in your email app for you to send.",
+    "type": "text"
+  },
+  "news_description_blog_news": {
+    "group": "News",
+    "label": "Description — Blog & news",
+    "default": "Blog & news",
+    "type": "text"
+  },
+  "news_heading_our_articles_latest_news_perspectives": {
+    "group": "News",
+    "label": "Heading — Our articles, latest news\n& perspectives",
+    "default": "Our articles, latest news\n& perspectives",
+    "type": "text"
+  },
+  "news_text_read_more": {
+    "group": "News",
+    "label": "Text — Read more ↗",
+    "default": "Read more ↗",
+    "type": "text"
+  },
+  "news_description_industry_perspective": {
+    "group": "News",
+    "label": "Description — Industry perspective",
+    "default": "Industry perspective",
+    "type": "text"
+  },
+  "news_text_read_more_2": {
+    "group": "News",
+    "label": "Text — Read more ↗",
+    "default": "Read more ↗",
+    "type": "text"
+  },
+  "service_1_bullet_1": {
+    "group": "Services",
+    "label": "Card 1 — Bullet 1",
+    "default": "Engineering & design",
+    "type": "text"
+  },
+  "service_1_bullet_2": {
+    "group": "Services",
+    "label": "Card 1 — Bullet 2",
+    "default": "Focused on your operation",
+    "type": "text"
+  },
+  "service_1_bullet_3": {
+    "group": "Services",
+    "label": "Card 1 — Bullet 3",
+    "default": "A dependable project partner",
+    "type": "text"
+  },
+  "service_1_url": {
+    "group": "Services",
+    "label": "Card 1 — Details URL",
+    "default": "#contact",
+    "type": "url"
+  },
+  "service_1_link": {
+    "group": "Services",
+    "label": "Card 1 — Details label",
+    "default": "More details ↗",
+    "type": "text"
+  },
+  "service_2_bullet_1": {
+    "group": "Services",
+    "label": "Card 2 — Bullet 1",
+    "default": "Engineering & design",
+    "type": "text"
+  },
+  "service_2_bullet_2": {
+    "group": "Services",
+    "label": "Card 2 — Bullet 2",
+    "default": "Focused on your operation",
+    "type": "text"
+  },
+  "service_2_bullet_3": {
+    "group": "Services",
+    "label": "Card 2 — Bullet 3",
+    "default": "A dependable project partner",
+    "type": "text"
+  },
+  "service_2_url": {
+    "group": "Services",
+    "label": "Card 2 — Details URL",
+    "default": "#contact",
+    "type": "url"
+  },
+  "service_2_link": {
+    "group": "Services",
+    "label": "Card 2 — Details label",
+    "default": "More details ↗",
+    "type": "text"
+  },
+  "service_3_bullet_1": {
+    "group": "Services",
+    "label": "Card 3 — Bullet 1",
+    "default": "Engineering & design",
+    "type": "text"
+  },
+  "service_3_bullet_2": {
+    "group": "Services",
+    "label": "Card 3 — Bullet 2",
+    "default": "Focused on your operation",
+    "type": "text"
+  },
+  "service_3_bullet_3": {
+    "group": "Services",
+    "label": "Card 3 — Bullet 3",
+    "default": "A dependable project partner",
+    "type": "text"
+  },
+  "service_3_url": {
+    "group": "Services",
+    "label": "Card 3 — Details URL",
+    "default": "#contact",
+    "type": "url"
+  },
+  "service_3_link": {
+    "group": "Services",
+    "label": "Card 3 — Details label",
+    "default": "More details ↗",
+    "type": "text"
+  },
+  "service_4_bullet_1": {
+    "group": "Services",
+    "label": "Card 4 — Bullet 1",
+    "default": "Engineering & design",
+    "type": "text"
+  },
+  "service_4_bullet_2": {
+    "group": "Services",
+    "label": "Card 4 — Bullet 2",
+    "default": "Focused on your operation",
+    "type": "text"
+  },
+  "service_4_bullet_3": {
+    "group": "Services",
+    "label": "Card 4 — Bullet 3",
+    "default": "A dependable project partner",
+    "type": "text"
+  },
+  "service_4_url": {
+    "group": "Services",
+    "label": "Card 4 — Details URL",
+    "default": "#contact",
+    "type": "url"
+  },
+  "service_4_link": {
+    "group": "Services",
+    "label": "Card 4 — Details label",
+    "default": "More details ↗",
+    "type": "text"
+  },
+  "service_5_bullet_1": {
+    "group": "Services",
+    "label": "Card 5 — Bullet 1",
+    "default": "Engineering & design",
+    "type": "text"
+  },
+  "service_5_bullet_2": {
+    "group": "Services",
+    "label": "Card 5 — Bullet 2",
+    "default": "Focused on your operation",
+    "type": "text"
+  },
+  "service_5_bullet_3": {
+    "group": "Services",
+    "label": "Card 5 — Bullet 3",
+    "default": "A dependable project partner",
+    "type": "text"
+  },
+  "service_5_url": {
+    "group": "Services",
+    "label": "Card 5 — Details URL",
+    "default": "#contact",
+    "type": "url"
+  },
+  "service_5_link": {
+    "group": "Services",
+    "label": "Card 5 — Details label",
+    "default": "More details ↗",
+    "type": "text"
+  },
+  "contact_email": {
+    "group": "Contact",
+    "label": "Recipient email",
+    "default": "",
+    "type": "email"
+  },
+  "hero_background": {
+    "group": "Hero",
+    "label": "Background image",
+    "default": "hero-industry.jpg",
+    "type": "image"
+  },
+  "projects_background": {
+    "group": "Projects",
+    "label": "Background image",
+    "default": "h1-bg04.jpg",
+    "type": "image"
+  },
+  "offer_background": {
+    "group": "Offer",
+    "label": "Background image",
+    "default": "h1-bg05.jpg",
+    "type": "image"
+  },
+  "contact_background": {
+    "group": "Contact",
+    "label": "Background image",
+    "default": "h1-banner6.jpg",
+    "type": "image"
+  },
+  "footer_background": {
+    "group": "Footer",
+    "label": "Background image",
+    "default": "footer-bg.jpg",
+    "type": "image"
+  },
+  "footer_text_fronex": {
+    "group": "Footer",
+    "label": "Text — ✳ fronex",
+    "default": "✳ fronex",
+    "type": "text"
+  },
+  "footer_text_fronex_2": {
+    "group": "Footer",
+    "label": "Text — fronex.",
+    "default": "fronex.",
+    "type": "text"
+  },
+  "footer_description_forward_thinking_solid_foundations": {
+    "group": "Footer",
+    "label": "Description — Forward thinking.\nSolid foundations.",
+    "default": "Forward thinking.\nSolid foundations.",
+    "type": "text"
+  },
+  "footer_link_label_contact_our_team": {
+    "group": "Footer",
+    "label": "Link label — Contact our team ↗",
+    "default": "Contact our team ↗",
+    "type": "text"
+  },
+  "footer_heading_quick_links": {
+    "group": "Footer",
+    "label": "Heading — Quick links",
+    "default": "Quick links",
+    "type": "text"
+  },
+  "footer_heading_fresh_perspectives_stay_in_touch": {
+    "group": "Footer",
+    "label": "Heading — Fresh perspectives.\nStay in touch.",
+    "default": "Fresh perspectives.\nStay in touch.",
+    "type": "text"
+  },
+  "footer_description_follow_our_latest_articles_and_updates_in_your_preferre": {
+    "group": "Footer",
+    "label": "Description — Follow our latest articles and updates in your preferre",
+    "default": "Follow our latest articles and updates in your preferred feed reader.",
+    "type": "text"
+  },
+  "footer_link_label_subscribe_via_rss": {
+    "group": "Footer",
+    "label": "Link label — Subscribe via RSS",
+    "default": "Subscribe via RSS",
+    "type": "text"
+  },
+  "footer_text_fronex_3": {
+    "group": "Footer",
+    "label": "Text — Fronex.",
+    "default": "Fronex.",
+    "type": "text"
+  },
+  "footer_link_destination_content": {
+    "group": "Footer",
+    "label": "Link destination — #content",
+    "default": "#content",
+    "type": "url"
+  },
+  "footer_link_label_back_to_top": {
+    "group": "Footer",
+    "label": "Link label — Back to top ↑",
+    "default": "Back to top ↑",
+    "type": "text"
+  },
+  "hero_statistic": {
+    "group": "Hero",
+    "label": "Statistic",
+    "default": "360°",
+    "type": "text"
+  },
+  "project_1_url": {
+    "group": "Projects",
+    "label": "Card 1 — Link destination",
+    "default": "#contact",
+    "type": "url"
+  },
+  "project_2_url": {
+    "group": "Projects",
+    "label": "Card 2 — Link destination",
+    "default": "#contact",
+    "type": "url"
+  },
+  "news_fallback_1": {
+    "group": "News",
+    "label": "Post 1 — Image when no featured image is set",
+    "default": "blog-1.jpg",
+    "type": "image"
+  },
+  "news_fallback_2": {
+    "group": "News",
+    "label": "Post 2 — Image when no featured image is set",
+    "default": "blog-2.jpg",
+    "type": "image"
+  },
+  "news_fallback_3": {
+    "group": "News",
+    "label": "Post 3 — Image when no featured image is set",
+    "default": "blog-6.jpg",
+    "type": "image"
+  }
+}

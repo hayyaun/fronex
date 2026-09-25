@@ -22,7 +22,7 @@ cp .env.example .env
 docker compose up -d --wait
 ```
 
-Open http://localhost:8080, complete the WordPress installer, then activate **Local Theme** under **Appearance → Themes**. Edit files in `theme/`; changes appear immediately. The theme is mounted read-only inside the container, but remains editable on the host. Change `WP_PORT` in `.env` if port 8080 is occupied.
+Open http://localhost:8080, complete the WordPress installer, then activate **Fronex Theme** under **Appearance → Themes**. Edit files in `theme/`; changes appear immediately. The theme is mounted read-only inside the container, but remains editable on the host. Change `WP_PORT` in `.env` if port 8080 is occupied.
 
 The first startup may take several minutes while MariaDB initializes its data files, especially on Docker Desktop/WSL. The database health check allows up to roughly ten minutes for this. Follow progress with `docker compose logs -f db`; avoid interrupting initial database creation.
 
@@ -61,14 +61,18 @@ References: [official WordPress image](https://hub.docker.com/_/wordpress) and [
 
 ## Fronex homepage
 
-The active Local Theme now uses `theme/front-page.php` for its industrial landing page. It includes a hero, about section, stacked service cards, project concepts, team profiles, manually controlled testimonials, contact form that prepares an email draft, latest WordPress posts, and footer. The reference workflow section is intentionally omitted.
+Fronex Theme uses `theme/front-page.php` for its industrial landing page. It includes a hero, about section, stacked service cards, project concepts, team profiles, manually controlled testimonials, contact form that prepares an email draft, latest WordPress posts, and footer. The reference workflow section is intentionally omitted.
 
-- Edit section text and image selections in `theme/front-page.php`, navigation in `theme/header.php`, and footer in `theme/footer.php`.
+- Edit homepage and footer content under **Appearance → Homepage Content**. Open a section, change its text, links, or images, then **Save Changes**. Image buttons open the WordPress Media Library. New lines in text are preserved; HTML is not accepted. Each field has a **Restore default** button, applied when you save.
+- The editor appears automatically when this version of **Fronex Theme** is active. No plugin, page creation, or database import is required. Existing default content stays visible until edited. Content is saved in the WordPress database (`fronex_home_content`), so replacing the theme files does not erase it. Keep the installed theme directory name when updating an existing installation.
+- The layout keeps five service cards, two projects, three team cards, and three testimonials; this editor changes their content, not their count or order. Navigation remains in `theme/header.php`. Field definitions and defaults are in `theme/inc/homepage-fields.json`, with registration, sanitization, and rendering helpers in `theme/inc/homepage-content.php`.
 - Styles are in `theme/style.css`; scroll reveals, mobile navigation, contact draft preparation, and testimonial controls are in `theme/assets/site.js`. No external animation libraries are required. Reduced-motion preferences are respected.
 - Selected reference images are copied into `theme/assets/images`. The original saved page stays in the ignored `inspiration/` directory. These are preview images; replace them with your own licensed imagery before publication.
 - Team roles, project concepts, and testimonials are illustrative content, not claims about actual people, clients, or completed work. Replace these when final business content is available.
-- Contact links use the WordPress administration email configured under Settings → General. The news section displays up to three published posts and is omitted when there are none.
+- Contact links and the draft form use the editable **Contact → Recipient email**, defaulting to the WordPress administration email. Manage news articles and featured images under **Posts**. Editable placeholder articles fill any of the three slots without a published post.
 
 Compose uses the fixed project name `fronex` and container names `fronex-db` and `fronext-wp`, regardless of the checkout folder name. Volume names are explicitly fixed to `fronex_db_data` and `fronex_wordpress_data` independently of the project or checkout folder name. Changing volume names does not migrate data: copy any data you need from the previous volumes into these volumes before startup, with database containers stopped. Keep the previous volumes until migration is verified. When replacing old containers, keep those volumes (do not use `down -v`), then run `docker compose up -d --wait` from this directory. Explicit `-p` or `COMPOSE_PROJECT_NAME` overrides take precedence over the configured project name.
 
-The screenshot refinement uses locally hosted Bai Jamjuree fonts, staggered hero feature cards, decorative image masks, sticky desktop service cards, two project cards, three team profiles, an industrial offer banner, photo-led testimonials, and a layered footer. Contact form submission opens the visitor’s mail application for review and sending; it does not send mail from WordPress. Footer subscriptions link to the WordPress RSS feed.
+The screenshot refinement uses locally hosted Bai Jamjuree fonts, staggered hero feature cards, decorative image masks, button-controlled stacked service cards, two project cards, three team profiles, an industrial offer banner, photo-led testimonials, and a layered footer. Contact form submission opens the visitor’s mail application for review and sending; it does not send mail from WordPress. Footer subscriptions link to the WordPress RSS feed.
+
+Run `make zip` to create `build/fronex-theme.zip` for manual installation through **Appearance → Themes → Add New → Upload Theme**. For an existing installation, replace its theme files rather than deleting the theme. This archive includes theme files only; database content and Media Library uploads must be migrated separately when moving between sites.
