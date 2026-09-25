@@ -665,78 +665,6 @@
     "default": "Let’s discuss your next project.",
     "type": "text"
   },
-  "contact_form_label_full_name": {
-    "group": "Contact",
-    "label": "Form label — Full name",
-    "default": "Full name",
-    "type": "text"
-  },
-  "contact_input_placeholder_your_name": {
-    "group": "Contact",
-    "label": "Input placeholder — Your name",
-    "default": "Your name",
-    "type": "text"
-  },
-  "contact_form_label_phone": {
-    "group": "Contact",
-    "label": "Form label — Phone",
-    "default": "Phone",
-    "type": "text"
-  },
-  "contact_input_placeholder_your_phone_number": {
-    "group": "Contact",
-    "label": "Input placeholder — Your phone number",
-    "default": "Your phone number",
-    "type": "text"
-  },
-  "contact_form_label_email_address": {
-    "group": "Contact",
-    "label": "Form label — Email address *",
-    "default": "Email address *",
-    "type": "text"
-  },
-  "contact_input_placeholder_you_company_com": {
-    "group": "Contact",
-    "label": "Input placeholder — you@company.com",
-    "default": "you@company.com",
-    "type": "text"
-  },
-  "contact_form_label_services": {
-    "group": "Contact",
-    "label": "Form label — Services *",
-    "default": "Services *",
-    "type": "text"
-  },
-  "contact_select_prompt_select_a_service": {
-    "group": "Contact",
-    "label": "Select prompt — Select a service",
-    "default": "Select a service",
-    "type": "text"
-  },
-  "contact_form_label_write_message": {
-    "group": "Contact",
-    "label": "Form label — Write message *",
-    "default": "Write message *",
-    "type": "text"
-  },
-  "contact_input_placeholder_tell_us_about_your_project": {
-    "group": "Contact",
-    "label": "Input placeholder — Tell us about your project…",
-    "default": "Tell us about your project…",
-    "type": "text"
-  },
-  "contact_button_label_prepare_email": {
-    "group": "Contact",
-    "label": "Button label — Prepare email ↗",
-    "default": "Prepare email ↗",
-    "type": "text"
-  },
-  "contact_description_opens_a_draft_in_your_email_app_for_you_to_send": {
-    "group": "Contact",
-    "label": "Description — Opens a draft in your email app for you to send.",
-    "default": "Opens a draft in your email app for you to send.",
-    "type": "text"
-  },
   "news_description_blog_news": {
     "group": "News",
     "label": "Description — Blog & news",
@@ -919,7 +847,7 @@
   },
   "contact_email": {
     "group": "Contact",
-    "label": "Recipient email",
+    "label": "Direct email link address",
     "default": "",
     "type": "email"
   },

@@ -29,16 +29,6 @@
     if (event.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') { closeMenu(); toggle.focus(); }
   });
   window.matchMedia('(min-width: 901px)').addEventListener('change', event => { if (event.matches && toggle) closeMenu(); });
-  const form = document.querySelector('.contact-form');
-  form?.addEventListener('submit', event => {
-    event.preventDefault();
-    if (!form.reportValidity()) return;
-    const data = new FormData(form);
-    const body = `Name: ${data.get('name')}\nEmail: ${data.get('email')}\nPhone: ${data.get('phone')}\nService: ${data.get('service')}\n\n${data.get('message')}`;
-    const subject = `Project enquiry: ${data.get('service')}`;
-    window.location.href = `mailto:${encodeURIComponent(form.dataset.recipient)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    form.querySelector('.form-note').textContent = 'Your email app was requested. Send the prepared draft there, or use the Email our team link.';
-  });
   const serviceCarousel = document.querySelector('[data-service-carousel]');
   if (serviceCarousel) {
     const serviceCards = Array.from(serviceCarousel.querySelectorAll('[data-service-card]'));

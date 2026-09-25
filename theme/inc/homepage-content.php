@@ -117,7 +117,8 @@ function fronex_home_admin() {
     <div class="wrap fronex-editor">
         <h1>Homepage Content</h1>
         <p>Edit the content while keeping the Fronex layout and animations. Line breaks in text create new lines. Save Changes publishes your edits.</p>
-        <p>Cards keep their existing order and count. News articles are managed under <a href="<?php echo esc_url( admin_url( 'edit.php' ) ); ?>">Posts</a>; placeholders appear only when there are fewer than three posts. The contact form opens an email draft.</p>
+        <p>Cards keep their existing order and count. News articles are managed under <a href="<?php echo esc_url( admin_url( 'edit.php' ) ); ?>">Posts</a>; placeholders appear only when there are fewer than three posts.</p>
+        <p>The homepage uses Fluent Forms form 1. Edit its fields, service choices, button, confirmation, and notifications under <a href="<?php echo esc_url( admin_url( 'admin.php?page=fluent_forms' ) ); ?>">Fluent Forms</a>. The contact email below is for the direct email links, not form notifications.</p>
         <?php settings_errors(); ?>
         <form action="options.php" method="post">
             <?php settings_fields( 'fronex_homepage' ); ?>

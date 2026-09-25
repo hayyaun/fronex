@@ -1,7 +1,7 @@
 /*
 Theme Name: Fronex Theme
 Description: Fronex industrial homepage inspired by the supplied reference.
-Version: 1.3.0
+Version: 1.3.1
 Requires at least: 6.6
 Requires PHP: 8.3
 Text Domain: local-theme
@@ -1734,3 +1734,92 @@ body:not(.home) article a {
 .reading-content { margin-top: 20px; font-size: 14px; color: var(--muted); }
 
 .contact-copy > .eyebrow { align-self: flex-start; }
+
+/* Fluent Forms owns validation and submission; the theme supplies appearance. */
+.contact-form--fluent { display: block; min-width: 0; }
+.contact-form--fluent .fluentform { width: 100%; }
+.contact-form--fluent .frm-fluent-form > fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 20px;
+    min-width: 0;
+}
+.contact-form--fluent .frm-fluent-form > fieldset > .ff-el-group { margin: 0; min-width: 0; }
+.contact-form--fluent fieldset > .ff-el-group:has(textarea),
+.contact-form--fluent fieldset > .ff_submit_btn_wrapper,
+.contact-form--fluent fieldset > .ff-t-container,
+.contact-form--fluent fieldset > .ff-el-group:has(.ff-el-form-check),
+.contact-form--fluent fieldset > .ff-el-group:has(.cf-turnstile),
+.contact-form--fluent fieldset > .ff-el-group:has(.g-recaptcha) { grid-column: 1 / -1; }
+.contact-form--fluent .fluentform .ff-el-input--label { margin-bottom: 10px; }
+.contact-form--fluent .fluentform .ff-el-input--label label { color: white; font-weight: 500; }
+.contact-form--fluent .fluentform .ff-el-form-control {
+    margin-top: 0;
+    padding: 16px;
+    border: 1px solid #ffffff30;
+    border-radius: 0;
+    background: #ffffff22;
+    color: white;
+    font: inherit;
+    font-size: 14px;
+    height: auto;
+}
+.contact-form--fluent .fluentform .ff-el-form-control:focus {
+    border-color: var(--yellow);
+    outline: 2px solid var(--yellow);
+    outline-offset: 2px;
+    box-shadow: none;
+}
+.contact-form--fluent input[type="hidden"] { display: none; }
+.contact-form--fluent input[type="checkbox"],
+.contact-form--fluent input[type="radio"] { display: inline-block; width: auto; padding: 0; margin: 0 8px 0 0; }
+#contact .contact-form--fluent .fluentform .ff-btn-submit {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding: 17px 24px;
+    background: var(--yellow);
+    color: var(--ink);
+    border: 0;
+    border-radius: 0;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+.contact-form--fluent .fluentform .ff-btn-submit::after { content: '↗'; }
+#contact .contact-form--fluent .fluentform .ff-btn-submit:hover { background: #ffd363; color: var(--ink); }
+.contact-form--fluent .fluentform .ff-btn-submit:disabled { opacity: .65; cursor: wait; }
+.contact-form--fluent .ff-el-is-error .text-danger,
+.contact-form--fluent .ff-el-input--label.ff-el-is-required::after,
+.contact-form--fluent .ff-el-input--label.ff-el-is-required label::after { color: #ffd3cc; }
+.contact-form--fluent .ff-message-success,
+.contact-form--fluent .ff-errors-in-stack:not(:empty) { background: #172324; color: white; padding: 18px; border: 1px solid var(--yellow); box-shadow: none; }
+.contact-form--fluent .ff-message-success { margin-top: 20px; }
+.contact-form--fluent .ff-errors-in-stack .error { color: #ffd3cc; }
+.contact-form--fluent .fluentform .ff-el-form-control::placeholder,
+.contact-form--fluent .fluentform .choices__input::placeholder { color: #e1e0db; opacity: 1; }
+.contact-form--fluent .fluentform .choices__inner {
+    background: #ffffff22;
+    color: white;
+    border: 1px solid #ffffff30;
+    border-radius: 0;
+    min-height: 55px;
+    padding: 10px 12px;
+}
+.contact-form--fluent .fluentform .choices__input {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    min-height: 0;
+    margin: 0;
+    padding: 4px;
+    background: transparent;
+    color: white;
+    border: 0;
+}
+.contact-form--fluent .fluentform .choices__list--dropdown { background: white; color: var(--ink); }
+.contact-form--fluent .fluentform .choices__list--multiple .choices__item { background: var(--ink); color: white; border-color: #ffffff50; }
+@media (max-width: 767px) {
+    .contact-form--fluent .frm-fluent-form > fieldset { grid-template-columns: 1fr; gap: 20px; }
+    .contact-form--fluent .fluentform .ff-el-form-control { font-size: 16px; }
+}
