@@ -845,6 +845,12 @@
     "default": "More details ↗",
     "type": "text"
   },
+  "contact_form_id": {
+    "group": "Contact",
+    "label": "Fluent Forms form ID",
+    "default": "3",
+    "type": "positive_integer"
+  },
   "contact_email": {
     "group": "Contact",
     "label": "Direct email link address",

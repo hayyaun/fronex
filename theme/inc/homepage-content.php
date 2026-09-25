@@ -57,6 +57,10 @@ function fronex_home_sanitize( $input ) {
             $protocols = 'image' === $field['type'] ? array( 'http', 'https' ) : array( 'http', 'https', 'mailto', 'tel' );
             $value = esc_url_raw( $raw, $protocols );
             $valid = '' === $raw || ( '' !== $value && ( preg_match( '~^https?://[^/]+~i', $value ) || ( 'url' === $field['type'] && preg_match( '~^(#|/|mailto:|tel:)~i', $value ) ) ) );
+        } elseif ( 'positive_integer' === $field['type'] ) {
+            $number = filter_var( $raw, FILTER_VALIDATE_INT, array( 'options' => array( 'min_range' => 1 ) ) );
+            $valid = false !== $number;
+            $value = $valid ? (string) $number : '';
         } elseif ( 'email' === $field['type'] ) {
             $value = sanitize_email( $raw );
             $valid = (bool) is_email( $raw );
@@ -118,7 +122,7 @@ function fronex_home_admin() {
         <h1>Homepage Content</h1>
         <p>Edit the content while keeping the Fronex layout and animations. Line breaks in text create new lines. Save Changes publishes your edits.</p>
         <p>Cards keep their existing order and count. News articles are managed under <a href="<?php echo esc_url( admin_url( 'edit.php' ) ); ?>">Posts</a>; placeholders appear only when there are fewer than three posts.</p>
-        <p>The homepage uses Fluent Forms form 1. Edit its fields, service choices, button, confirmation, and notifications under <a href="<?php echo esc_url( admin_url( 'admin.php?page=fluent_forms' ) ); ?>">Fluent Forms</a>. The contact email below is for the direct email links, not form notifications.</p>
+        <p>Choose the Fluent Forms form ID in the Contact section below (default: 3). Enter only the number from your form shortcode. Edit its fields, service choices, button, confirmation, and notifications under <a href="<?php echo esc_url( admin_url( 'admin.php?page=fluent_forms' ) ); ?>">Fluent Forms</a>. The contact email below is for the direct email links, not form notifications.</p>
         <?php settings_errors(); ?>
         <form action="options.php" method="post">
             <?php settings_fields( 'fronex_homepage' ); ?>
@@ -131,6 +135,8 @@ function fronex_home_admin() {
                             <label for="<?php echo esc_attr( $id ); ?>"><?php echo esc_html( $field['label'] ); ?></label>
                             <?php if ( 'text' === $field['type'] ) : ?>
                                 <textarea id="<?php echo esc_attr( $id ); ?>" name="fronex_home_content[<?php echo esc_attr( $key ); ?>]" rows="<?php echo strlen( $field['default'] ) > 100 ? '3' : '2'; ?>"><?php echo esc_textarea( fronex_home_value( $key ) ); ?></textarea>
+                            <?php elseif ( 'positive_integer' === $field['type'] ) : ?>
+                                <input id="<?php echo esc_attr( $id ); ?>" type="number" min="1" step="1" required name="fronex_home_content[<?php echo esc_attr( $key ); ?>]" value="<?php echo esc_attr( fronex_home_value( $key ) ); ?>">
                             <?php else : ?>
                                 <input id="<?php echo esc_attr( $id ); ?>" type="<?php echo 'email' === $field['type'] ? 'email' : 'text'; ?>" name="fronex_home_content[<?php echo esc_attr( $key ); ?>]" value="<?php echo esc_attr( fronex_home_value( $key ) ); ?>" <?php echo 'email' === $field['type'] ? 'required' : ''; ?>>
                             <?php endif; ?>

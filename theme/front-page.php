@@ -2,7 +2,9 @@
 /** Industrial homepage inspired by the supplied visual reference. */
 defined( 'ABSPATH' ) || exit;
 // Render before the header so Fluent Forms can enqueue its styles in wp_head.
-$contact_form = shortcode_exists( 'fluentform' ) ? do_shortcode( '[fluentform id="1"]' ) : '';
+$contact_form_id = absint( fronex_home_value( 'contact_form_id' ) );
+$contact_form = shortcode_exists( 'fluentform' ) && $contact_form_id > 0
+    ? do_shortcode( sprintf( '[fluentform id="%d"]', $contact_form_id ) ) : '';
 get_header();
 $services = array(
     array( fronex_home_value( 'services_card_1_title' ), '', fronex_home_value( 'services_card_1_image' ), fronex_home_value( 'services_card_1_description' ) ),
